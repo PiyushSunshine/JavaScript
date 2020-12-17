@@ -1,13 +1,11 @@
 #clockContainer{
 
-    background-color: rgb(20, 18, 18); /* only this is not enough 
-    need to have height and width*/ 
+    background-color: rgb(20, 18, 18);
     margin: auto;
     border: 4px solid silver;
-    height: 40vw;    /*vw : view port width */
+    height: 40vw;   
     width: 40vw;
     position: relative;
-    /* now create a background clock using url*/
     background: url(Clock.png) no-repeat;
     background-size: 100%;
 }
@@ -17,68 +15,38 @@
     background: rgb(35, 36, 30);
     border-radius: 10px;
     border-color: black;
-    /*
-    always need to define height and width
-    to make it appear in the page
-    */
+    
 }
-
-/*
-for making  hands
- */
 
  #hours{
       width: 2.0%;
       height: 10%;
-      top: 39.0%;   /* to make it increase to stay it up and down*/
+      top: 39.0%;   
       left: 50.5%;
       opacity: 0.8;
       transform-origin: bottom;
-      /* display: none; */
+      
  }
 
  #minutes{
-       /* width: 4%;
-       height: 34% */
+     
       width: 1.4%;
       height: 15%;
       top: 34.7%;
       left: 50.8%;
-      opacity: 0.8;  /* will show different hands 
-      while inpecting on console.*/
-      /* display: none;   */
+      opacity: 0.8; 
       transform-origin: bottom;
 
  }
 
  #seconds{
-       /* width: 4%;
-       height: 34% */
       width: 1%;
       height: 22%;
       top: 27%;
       left: 50.9%;
       opacity: 0.8;
-     /* display: none; /* will not display */
      transform-origin: bottom;
 
     }
 
- /* After doing all stuff we will find the hands not
- stay constant and hence we need to do below things*/
-
- /*
-
- note : Important
-
- If u want to make the hands of clock at the center
- then use px for there width and height
-
- width : 440px
- height : 440px..
-
- this will help to enable u to zoom and view closely.
-
- then set the left and set it to necessary 
- percentage..
- */
+ 
